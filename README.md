@@ -7,15 +7,15 @@
 ## Project Structure
 
 ```
-project_1/
+algorithms/
 ├── insertion_sort.py      # Insertion sort implementation
 ├── merge_sort.py          # Merge sort implementation  
 ├── quick_sort.py          # Standard quicksort implementation
 ├── mod_quick_sort.py      # Modified quicksort with median-of-three pivot
 ├── heap_sort.py           # Heap sort implementation
 ├── algorithms.py          # Combined module for all algorithms
-├── test.py                # Main test suite with timing
-└── README.md              # Test suite instructions
+── test.py                # Main test suite with timing
+── README.md              # Test suite instructions
 ```
 
 ## Implemented Algorithms

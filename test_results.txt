@@ -2,7 +2,6 @@
 Sorting Algorithm Performance Test Results
 ==========================================
 Test Type: all
-Test Date: 2025-07-12 21:44:09
 Array Sizes: [1000, 2000, 3000, 4000, 5000, 10000, 40000, 50000, 60000]
 
 Testing with array size: 1000
