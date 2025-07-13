@@ -3,6 +3,8 @@ Oscar Nolen
 ITCS 6114
 """
 
+import random
+
 
 def quick_sort(arr):
     """Quick sort implementation (in-place)."""
@@ -27,8 +29,12 @@ def quick_sort_helper(arr, low, high):
 
 
 def partition(arr, low, high):
-    """Partition function using the last element as pivot."""
-    # Choose the last element as pivot
+    """Partition function using a random element as pivot."""
+    # Choose a random element as pivot and swap it with the last element
+    random_index = random.randint(low, high)
+    arr[random_index], arr[high] = arr[high], arr[random_index]
+
+    # Now proceed with the last element as pivot (which is now random)
     pivot = arr[high]
 
     # Index of smaller element (indicates the right position of pivot)

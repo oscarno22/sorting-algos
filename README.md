@@ -15,14 +15,14 @@ project_1/
 ├── heap_sort.py           # Heap sort implementation
 ├── algorithms.py          # Combined module for all algorithms
 ├── test.py                # Main test suite with timing
-└── README.md              # This file
+└── README.md              # Test suite instructions
 ```
 
 ## Implemented Algorithms
 
 1. **Insertion Sort** - Simple comparison-based sorting
 2. **Merge Sort** - Divide and conquer recursive sorting
-3. **Quick Sort** - In-place partitioning with last element as pivot
+3. **Quick Sort** - In-place partitioning with random element as pivot
 4. **Modified Quick Sort** - Hybrid approach with median-of-three pivot and insertion sort for small subarrays (size <=20)
 5. **Heap Sort** - Vector-based heap with one-at-a-time insertion
 
@@ -47,6 +47,8 @@ python test.py --best
 # Run only worst case tests (reverse sorted arrays)
 python test.py --worst
 ```
+
+Results are outputted to `test_results.txt`.
 
 ### Test Configuration
 

@@ -1,0 +1,216 @@
+==========================================
+Sorting Algorithm Performance Test Results
+==========================================
+Test Type: all
+Test Date: 2025-07-12 21:44:09
+Array Sizes: [1000, 2000, 3000, 4000, 5000, 10000, 40000, 50000, 60000]
+
+Testing with array size: 1000
+==================================================
+  Best Case Tests (size 1000):
+    Insertion Sort      : 0.000034 seconds
+    Merge Sort          : 0.000600 seconds
+    Modified Quick Sort : 0.000240 seconds
+    Quick Sort          : 0.000645 seconds
+    Heap Sort           : 0.001401 seconds
+
+  Worst Case Tests (size 1000):
+    Insertion Sort      : 0.025808 seconds
+    Merge Sort          : 0.000508 seconds
+    Modified Quick Sort : 0.000494 seconds
+    Quick Sort          : 0.000496 seconds
+    Heap Sort           : 0.000875 seconds
+
+  Random Case Tests (size 1000):
+    Insertion Sort      : 0.012451 seconds
+    Merge Sort          : 0.000694 seconds
+    Modified Quick Sort : 0.000328 seconds
+    Quick Sort          : 0.000626 seconds
+    Heap Sort           : 0.000863 seconds
+
+Testing with array size: 2000
+==================================================
+  Best Case Tests (size 2000):
+    Insertion Sort      : 0.000066 seconds
+    Merge Sort          : 0.000969 seconds
+    Modified Quick Sort : 0.000406 seconds
+    Quick Sort          : 0.001032 seconds
+    Heap Sort           : 0.002314 seconds
+
+  Worst Case Tests (size 2000):
+    Insertion Sort      : 0.094881 seconds
+    Merge Sort          : 0.000977 seconds
+    Modified Quick Sort : 0.001036 seconds
+    Quick Sort          : 0.001057 seconds
+    Heap Sort           : 0.001783 seconds
+
+  Random Case Tests (size 2000):
+    Insertion Sort      : 0.049404 seconds
+    Merge Sort          : 0.001362 seconds
+    Modified Quick Sort : 0.000744 seconds
+    Quick Sort          : 0.001217 seconds
+    Heap Sort           : 0.001977 seconds
+
+Testing with array size: 3000
+==================================================
+  Best Case Tests (size 3000):
+    Insertion Sort      : 0.000082 seconds
+    Merge Sort          : 0.001622 seconds
+    Modified Quick Sort : 0.000765 seconds
+    Quick Sort          : 0.001749 seconds
+    Heap Sort           : 0.003982 seconds
+
+  Worst Case Tests (size 3000):
+    Insertion Sort      : 0.222812 seconds
+    Merge Sort          : 0.001704 seconds
+    Modified Quick Sort : 0.001969 seconds
+    Quick Sort          : 0.001777 seconds
+    Heap Sort           : 0.002861 seconds
+
+  Random Case Tests (size 3000):
+    Insertion Sort      : 0.114297 seconds
+    Merge Sort          : 0.002000 seconds
+    Modified Quick Sort : 0.001147 seconds
+    Quick Sort          : 0.001881 seconds
+    Heap Sort           : 0.003146 seconds
+
+Testing with array size: 4000
+==================================================
+  Best Case Tests (size 4000):
+    Insertion Sort      : 0.000108 seconds
+    Merge Sort          : 0.002053 seconds
+    Modified Quick Sort : 0.000984 seconds
+    Quick Sort          : 0.002414 seconds
+    Heap Sort           : 0.005590 seconds
+
+  Worst Case Tests (size 4000):
+    Insertion Sort      : 0.400717 seconds
+    Merge Sort          : 0.002212 seconds
+    Modified Quick Sort : 0.002493 seconds
+    Quick Sort          : 0.002232 seconds
+    Heap Sort           : 0.004010 seconds
+
+  Random Case Tests (size 4000):
+    Insertion Sort      : 0.205425 seconds
+    Merge Sort          : 0.002976 seconds
+    Modified Quick Sort : 0.001670 seconds
+    Quick Sort          : 0.002790 seconds
+    Heap Sort           : 0.004644 seconds
+
+Testing with array size: 5000
+==================================================
+  Best Case Tests (size 5000):
+    Insertion Sort      : 0.000122 seconds
+    Merge Sort          : 0.002781 seconds
+    Modified Quick Sort : 0.001177 seconds
+    Quick Sort          : 0.003007 seconds
+    Heap Sort           : 0.007045 seconds
+
+  Worst Case Tests (size 5000):
+    Insertion Sort      : 0.634358 seconds
+    Merge Sort          : 0.002902 seconds
+    Modified Quick Sort : 0.003313 seconds
+    Quick Sort          : 0.003055 seconds
+    Heap Sort           : 0.005051 seconds
+
+  Random Case Tests (size 5000):
+    Insertion Sort      : 0.329040 seconds
+    Merge Sort          : 0.003662 seconds
+    Modified Quick Sort : 0.002171 seconds
+    Quick Sort          : 0.003525 seconds
+    Heap Sort           : 0.005808 seconds
+
+Testing with array size: 10000
+==================================================
+  Best Case Tests (size 10000):
+    Insertion Sort      : 0.000263 seconds
+    Merge Sort          : 0.006073 seconds
+    Modified Quick Sort : 0.002860 seconds
+    Quick Sort          : 0.006343 seconds
+    Heap Sort           : 0.015666 seconds
+
+  Worst Case Tests (size 10000):
+    Insertion Sort      : 2.625050 seconds
+    Merge Sort          : 0.006385 seconds
+    Modified Quick Sort : 0.007446 seconds
+    Quick Sort          : 0.006517 seconds
+    Heap Sort           : 0.011676 seconds
+
+  Random Case Tests (size 10000):
+    Insertion Sort      : 1.341433 seconds
+    Merge Sort          : 0.008185 seconds
+    Modified Quick Sort : 0.004389 seconds
+    Quick Sort          : 0.008290 seconds
+    Heap Sort           : 0.012632 seconds
+
+Testing with array size: 40000
+==================================================
+  Best Case Tests (size 40000):
+    Insertion Sort      : 0.001070 seconds
+    Merge Sort          : 0.028073 seconds
+    Modified Quick Sort : 0.012529 seconds
+    Quick Sort          : 0.027542 seconds
+    Heap Sort           : 0.073480 seconds
+
+  Worst Case Tests (size 40000):
+    Insertion Sort      : 42.593005 seconds
+    Merge Sort          : 0.028496 seconds
+    Modified Quick Sort : 0.034856 seconds
+    Quick Sort          : 0.028467 seconds
+    Heap Sort           : 0.054927 seconds
+
+  Random Case Tests (size 40000):
+    Insertion Sort      : 21.862058 seconds
+    Merge Sort          : 0.037443 seconds
+    Modified Quick Sort : 0.039645 seconds
+    Quick Sort          : 0.055622 seconds
+    Heap Sort           : 0.060201 seconds
+
+Testing with array size: 50000
+==================================================
+  Best Case Tests (size 50000):
+    Insertion Sort      : 0.001483 seconds
+    Merge Sort          : 0.037290 seconds
+    Modified Quick Sort : 0.018035 seconds
+    Quick Sort          : 0.037357 seconds
+    Heap Sort           : 0.098965 seconds
+
+  Worst Case Tests (size 50000):
+    Insertion Sort      : 66.942281 seconds
+    Merge Sort          : 0.036101 seconds
+    Modified Quick Sort : 0.046708 seconds
+    Quick Sort          : 0.035138 seconds
+    Heap Sort           : 0.069355 seconds
+
+  Random Case Tests (size 50000):
+    Insertion Sort      : 35.822831 seconds
+    Merge Sort          : 0.048646 seconds
+    Modified Quick Sort : 0.062096 seconds
+    Quick Sort          : 0.081508 seconds
+    Heap Sort           : 0.077122 seconds
+
+Testing with array size: 60000
+==================================================
+  Best Case Tests (size 60000):
+    Insertion Sort      : 0.001638 seconds
+    Merge Sort          : 0.044150 seconds
+    Modified Quick Sort : 0.020648 seconds
+    Quick Sort          : 0.043676 seconds
+    Heap Sort           : 0.118256 seconds
+
+  Worst Case Tests (size 60000):
+    Insertion Sort      : 97.739930 seconds
+    Merge Sort          : 0.043440 seconds
+    Modified Quick Sort : 0.052373 seconds
+    Quick Sort          : 0.043318 seconds
+    Heap Sort           : 0.085060 seconds
+
+  Random Case Tests (size 60000):
+    Insertion Sort      : 51.533020 seconds
+    Merge Sort          : 0.058267 seconds
+    Modified Quick Sort : 0.088168 seconds
+    Quick Sort          : 0.105773 seconds
+    Heap Sort           : 0.096732 seconds
+
+All all tests completed! Results saved to test_results.txt
+==========================================================

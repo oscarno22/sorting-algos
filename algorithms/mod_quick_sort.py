@@ -3,7 +3,7 @@ Oscar Nolen
 ITCS 6114
 """
 
-from insertion_sort import insertion_sort_range
+from .insertion_sort import insertion_sort_range
 
 
 def mod_quick_sort(arr, threshold=20):
