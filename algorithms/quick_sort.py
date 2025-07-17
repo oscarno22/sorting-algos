@@ -1,62 +1,65 @@
 """
 Oscar Nolen
+Prithvi Koka
 ITCS 6114
 """
 
 import random
 
-
 def quick_sort(arr):
-    """Quick sort implementation (in-place)."""
+    """In-place quick sort implementation."""
     if len(arr) <= 1:
         return arr
 
-    # Create a copy to avoid modifying the original array
+    # make copy to be safe
     result = arr.copy()
     quick_sort_helper(result, 0, len(result) - 1)
     return result
 
+def quick_sort_helper(arr, left, right):
+    """Recursive quick sort between indices left and right."""
+    if left >= right:
+        return
 
-def quick_sort_helper(arr, low, high):
-    """Recursive helper function for quicksort."""
-    if low < high:
-        # Partition the array and get the pivot index
-        pivot_index = partition(arr, low, high)
+    # choose a random pivot
+    pivot_index = random.randint(left, right)
+    pivot = arr[pivot_index]
 
-        # Recursively sort elements before and after partition
-        quick_sort_helper(arr, low, pivot_index - 1)
-        quick_sort_helper(arr, pivot_index + 1, high)
+    # partition the array and get start + end of pivot section
+    h, k = partition(arr, left, right, pivot)
 
+    # sort elements less than pivot
+    quick_sort_helper(arr, left, h - 1)
 
-def partition(arr, low, high):
-    """Partition function using a random element as pivot."""
-    # Choose a random element as pivot and swap it with the last element
-    random_index = random.randint(low, high)
-    arr[random_index], arr[high] = arr[high], arr[random_index]
+    # sort elements greater than pivot
+    quick_sort_helper(arr, k + 1, right)
 
-    # Now proceed with the last element as pivot (which is now random)
-    pivot = arr[high]
+def partition(arr, left, right, pivot):
+    """rearranges elements around pivot using 3-way partitioning."""
+    i = left      # current index
+    h = left      # boundary for elements less than pivot
+    k = right     # boundary for elements greater than pivot
 
-    # Index of smaller element (indicates the right position of pivot)
-    i = low - 1
-
-    for j in range(low, high):
-        # If current element is smaller than or equal to pivot
-        if arr[j] <= pivot:
+    while i <= k:
+        if arr[i] < pivot:
+            # move to less-than region
+            arr[i], arr[h] = arr[h], arr[i]
             i += 1
-            arr[i], arr[j] = arr[j], arr[i]
+            h += 1
+        elif arr[i] > pivot:
+            # move to greater-than region
+            arr[i], arr[k] = arr[k], arr[i]
+            k -= 1
+        else:
+            # element equal to pivot, move on
+            i += 1
 
-    # Place pivot in its correct position
-    arr[i + 1], arr[high] = arr[high], arr[i + 1]
-    return i + 1
-
+    return h, k  # return bounds of the middle region
 
 if __name__ == "__main__":
-    # Example with a small array
-    example_arr = [64, 34, 25, 12, 22, 11, 90]
+    # sample array to test the sort
+    example_arr = [64, 34, 25, 12, 22, 11, 90, 25, 34, 25]
 
-    print("Original array:", example_arr)
-
-    # Test with last element as pivot (default)
+    print("original array:", example_arr)
     sorted_arr = quick_sort(example_arr)
-    print("Sorted array (last pivot):", sorted_arr)
+    print("sorted array:", sorted_arr)

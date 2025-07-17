@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-**Author:** Oscar Nolen  
+**Authors:** Oscar Nolen, Prithvi Koka
 **Course:** ITCS 6114  
 **Project:** Comparison-based Sorting Algorithms
 
@@ -72,3 +72,7 @@ python quick_sort.py
 python mod_quick_sort.py
 python heap_sort.py
 ```
+
+## Notes
+
+If 'relative import' error arises in insertion_sort.py, remove the "." from the import of `insertion_sort_range`. The relative import is required for test.py to run, though. This is more for if you run `mod_quick_sort.py` directly.
