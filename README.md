@@ -1,6 +1,7 @@
 # Sorting Algorithms
 
 **Authors:** Oscar Nolen, Prithvi Koka
+
 **Course:** ITCS 6114  
 **Project:** Comparison-based Sorting Algorithms
 
