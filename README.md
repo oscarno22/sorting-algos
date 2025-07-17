@@ -36,17 +36,17 @@ algorithms/
 ### Basic Usage
 
 ```bash
-# Run all tests (best case, worst case, and random case)
+# Run all tests (random case, sorted case, and reverse sorted case)
 python test.py
 
 # Run only random case tests
 python test.py --random
 
-# Run only best case tests (sorted arrays)
-python test.py --best
+# Run only sorted case test
+python test.py --sorted
 
-# Run only worst case tests (reverse sorted arrays)
-python test.py --worst
+# Run only reverse sorted case tests
+python test.py --reverse
 ```
 
 Results are outputted to `test_results.txt`.
@@ -58,8 +58,8 @@ The test suite runs with the following array sizes:
 
 ### Test Cases
 
-1. **Best Case**: Pre-sorted arrays (ascending order)
-2. **Worst Case**: Reverse-sorted arrays (descending order)
+1. **Sorted Case**: Ascending order
+2. **Reverse Sorted Case**: Descending order
 3. **Random Case**: Randomly generated arrays with values 1-1000
 
 ## Individual Algorithm Testing
